@@ -16,11 +16,9 @@
 
 # Project for DevOps Engineers and Infrastructure Engineers
 
-# If I can, you also can, rooting for you
-
 # Don't forget to follow me on here:
 
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
+# Deploy Netflix Clone on Cloud using Jenkins Sonarqube Docker & k8s - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
 
@@ -202,7 +200,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/jjohnbosco5/Netflix-Project.git'
+                git branch: 'master', url: 'https://github.com/jjohnbosco5/Netflix-Project.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -292,7 +290,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/jjohnbosco5/Netflix-Project.git'
+                git branch: 'master', url: 'https://github.com/jjohnbosco5/Netflix-Project.git'
             }
         }
         stage("Sonarqube Analysis "){
